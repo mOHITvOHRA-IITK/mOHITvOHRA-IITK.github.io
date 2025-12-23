@@ -8,19 +8,26 @@
       display: flex;
       flex-wrap: wrap;
       margin-bottom: 20px;
+      align-items: flex-start; /* align left & right vertically at the top */
     }
+
     .paper-info {
       flex: 1;
       min-width: 300px; /* ensures responsiveness */
       padding-right: 20px;
     }
+
     .paper-video {
       flex: 1;
       min-width: 300px;
     }
-    iframe, video {
-      max-width: 100%;
-      height: auto;
+
+    /* Make video responsive */
+    .paper-video iframe,
+    .paper-video video {
+      width: 100%;       /* fill the column width */
+      height: auto;      /* maintain aspect ratio */
+      max-height: 300px; /* limit video height */
     }
   </style>
 </head>
@@ -34,7 +41,7 @@
   <div class="paper-info">
     <p>
       <b>Mohit Vohra, Ravi Prakash, and Laxmidhar Behera</b><br>
-      <i>Real-time Grasp Pose Estimation for Novel Objects in Densely Cluttered Environment"</i><br>
+      <i>"Real-time Grasp Pose Estimation for Novel Objects in Densely Cluttered Environment"</i><br>
       IEEE International Conference on Robot and Human Interactive Communication (RO-MAN), 2019<br>
       <a href="assets/papers/Real_time_Grasp_Pose_Estimation_for_Novel_Objects_in_Densely_Cluttered_Environment.pdf">PDF</a> |
       <a href="https://ieeexplore.ieee.org/document/8956438">IEEE Xplore</a>
@@ -42,7 +49,7 @@
   </div>
   
   <div class="paper-video">
-        <video controls>
+    <video controls>
       <source src="assets/videos/Real-time Grasp Pose Estimation for Novel Objects in Densely Cluttered Environment.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
