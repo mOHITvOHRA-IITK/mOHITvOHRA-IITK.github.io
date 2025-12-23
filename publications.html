@@ -8,26 +8,29 @@
       display: flex;
       flex-wrap: wrap;
       margin-bottom: 20px;
-      align-items: flex-start; /* align left & right vertically at the top */
+      align-items: flex-start; /* align top */
     }
 
     .paper-info {
       flex: 1;
-      min-width: 300px; /* ensures responsiveness */
+      min-width: 300px;
       padding-right: 20px;
     }
 
     .paper-video {
       flex: 1;
       min-width: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
     }
 
-    /* Make video responsive */
-    .paper-video iframe,
-    .paper-video video {
-      width: 100%;       /* fill the column width */
-      height: auto;      /* maintain aspect ratio */
-      max-height: 300px; /* limit video height */
+    /* Fix video height and make width auto */
+    .paper-video video,
+    .paper-video iframe {
+      height: 180px;      /* fixed height */
+      width: auto;        /* adjust width to maintain aspect ratio */
+      max-width: 100%;    /* never exceed column width */
     }
   </style>
 </head>
@@ -54,10 +57,7 @@
       Your browser does not support the video tag.
     </video>
   </div>
-  
 </div>
-
-<!-- Repeat .paper-row for each paper -->
 
 </body>
 </html>
