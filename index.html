@@ -1,120 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="utf-8">
-  <title>Mohit Vohra | Robotics Researcher</title>
-
-  <meta name="description" content="Assistant Principal Researcher in Robotics working on machine vision, GNSS/RTK-based localization, autonomous inspection systems, sensor-robot integration, and point cloud processing.">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <title>Publications - Mohit Vohra</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-      color: #333;
+    .paper-row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+      align-items: flex-start; /* align top */
     }
 
-    h1, h2 {
-      color: #222;
+    .paper-info {
+      flex: 1;
+      min-width: 300px;
+      padding-right: 20px;
     }
 
-    h2 {
-      margin-top: 40px;
+    .paper-video {
+      flex: 1;
+      min-width: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
     }
 
-    img.profile {
-      float: right;
-      width: 150px;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 50%;
-      margin-left: 20px;
-      margin-bottom: 10px;
-    }
-
-    ul {
-      list-style-type: disc;
-      padding-left: 20px;
-    }
-
-    a {
-      color: #0066cc;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    @media (max-width: 600px) {
-      img.profile {
-        float: none;
-        display: block;
-        margin: 0 auto 20px auto;
-      }
+    /* Fix video height and make width auto */
+    .paper-video video,
+    .paper-video iframe {
+      height: 180px;      /* fixed height */
+      width: auto;        /* adjust width to maintain aspect ratio */
+      max-width: 100%;    /* never exceed column width */
     }
   </style>
 </head>
-
 <body>
 
-<h1>Mohit Vohra</h1>
-<p>
-Assistant Principal Researcher in Robotics specializing in autonomous systems, machine vision, and GNSS/RTK-based localization.
-</p>
+<h1>Publications</h1>
 
-<img src="assets/images/profile.jpg" 
-     alt="Portrait of Mohit Vohra, Robotics Researcher" 
-     class="profile">
+<h2>Conference Papers</h2>
 
-<h2>About Me</h2>
-<p>
-Mohit Vohra completed his PhD from <b>IIT Kanpur</b> on 
-<i>"Smart Manipulation Strategies for Autonomous Robotic Systems"</i>. 
-The doctoral thesis is available 
-<a href="https://shodhganga.inflibnet.ac.in/handle/10603/619826" target="_blank" rel="noopener noreferrer">here</a>.
-</p>
+<!-- 3 Paper Start -->
+<div class="paper-row">
+  <div class="paper-info">
+    <p>
+      <b>Mohit Vohra, Ravi Prakash, and Laxmidhar Behera</b><br>
+      <i>"Visually Guided UGV for Autonomous Mobile Manipulation in Dynamic and Unstructured GPS Denied Environments"</i><br>
+      International Conference on Computational Intelligence, ICCI 2021<br>
+      <a href="assets/papers/Visually_Guided_UGV_for_Autonomous_Mobile_Manipulation_in_Dynamic_and_Unstructured_GPS_Denied_Environments.pdf">PDF</a> |
+      <a href="https://link.springer.com/chapter/10.1007/978-981-19-2126-1_1">Springer Nature Link</a>
+    </p>
+  </div>
+  <div class="paper-video">
+    <video controls>
+      <source src="assets/videos/Visually Guided UGV for Autonomous Mobile Manipulation in Dynamic and Unstructured GPS Denied Env..mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+<!-- 3 Paper End -->
+  
 
-<p>
-He is currently an <b>Assistant Principal Researcher</b> at <b>DEWA R&amp;D (Robotics)</b>, 
-where his work focuses on multi-sensor perception, GNSS/RTK integration, autonomous inspection, 
-and the development of field-deployable robotic systems for real-world infrastructure applications.
-</p>
+<!-- 2 Paper Start -->
+<div class="paper-row">
+  <div class="paper-info">
+    <p>
+      <b>Mohit Vohra, Ravi Prakash, and Laxmidhar Behera</b><br>
+      <i>"Edge and Corner Detection in Unorganized Point Clouds for Robotic Pick and Place Applications"</i><br>
+      International Conference on Informatics in Control, Automation and Robotics, ICINCO, 2021<br>
+      <a href="assets/papers/Edge_and_Corner_Detection_in_Unorganized_Point_Clouds_for_Robotic_Pick_and_Place_Applications.pdf">PDF</a> |
+      <a href="https://www.scitepress.org/PublicationsDetail.aspx?ID=UpwSb6aDrHo=&t=1">ScitePress</a>
+    </p>
+  </div>
+  <div class="paper-video">
+    <video controls>
+      <source src="assets/videos/Edge and Corner Detection in Unorganized Point Clouds for Robotic Pick and Place Applications.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+<!-- 2 Paper End -->
+  
 
-<h2>Current Role & Responsibilities</h2>
-<ul>
-  <li>Leading the development of multi-sensor perception and localization systems for autonomous robots</li>
-  <li>Integrating GNSS/RTK, vision, and 3D sensing for precise navigation and inspection</li>
-  <li>Designing, validating, and deploying laboratory prototypes and field-ready robotic platforms</li>
-  <li>Collaborating with cross-functional research and engineering teams on advanced robotic solutions</li>
-</ul>
+<!-- 1 Paper Start -->
+<div class="paper-row">
+  <div class="paper-info">
+    <p>
+      <b>Mohit Vohra, Ravi Prakash, and Laxmidhar Behera</b><br>
+      <i>"Real-time Grasp Pose Estimation for Novel Objects in Densely Cluttered Environment"</i><br>
+      IEEE International Conference on Robot and Human Interactive Communication (RO-MAN), 2019<br>
+      <a href="assets/papers/Real_time_Grasp_Pose_Estimation_for_Novel_Objects_in_Densely_Cluttered_Environment.pdf">PDF</a> |
+      <a href="https://ieeexplore.ieee.org/document/8956438">IEEE Xplore</a>
+    </p>
+  </div>
+  <div class="paper-video">
+    <video controls>
+      <source src="assets/videos/Real-time Grasp Pose Estimation for Novel Objects in Densely Cluttered Environment.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+<!-- 1 Paper End -->
 
-<h2>Research Interests</h2>
-<ul>
-  <li>Machine Vision and 3D Perception</li>
-  <li>GNSS-deprived Localization and SLAM</li>
-  <li>Autonomous Inspection Systems</li>
-  <li>Sensor–Robot Integration</li>
-  <li>Point Cloud Processing and 6D Pose Estimation</li>
-  <li>GNSS/RTK-based Localization</li>
-</ul>
 
-<h2>Hobbies & Interests</h2>
-<p>
-Outside research, I enjoy spending time in nature and have a strong appreciation for plants and flowers. I maintain an active lifestyle through regular fitness workouts and running, and I also enjoy playing badminton, especially competitive and challenging games.
-</p>
-
-<h2>Links</h2>
-<p>
-<a href="publications.html">Publications</a> |
-<a href="projects.html">Projects</a> |
-<a href="https://scholar.google.com" target="_blank" rel="noopener noreferrer">Google Scholar</a> |
-<a href="https://github.com/mOHITvOHRA-IITK" target="_blank" rel="noopener noreferrer">GitHub</a>
-</p>
 
 </body>
 </html>
