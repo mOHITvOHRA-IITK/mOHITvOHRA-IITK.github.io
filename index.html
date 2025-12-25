@@ -3,42 +3,73 @@
 <head>
   <meta charset="utf-8">
   <title>Mohit Vohra | Assistant Principal Researcher in Robotics</title>
-  
-  <meta name="description" content="Mohit Vohra is an Assistant Principal Researcher in Robotics at DEWA R&D, working on machine vision, GNSS/RTK-based localization, autonomous inspection, sensor-robot integration, and point cloud processing.">
 
+  <meta name="description"
+        content="Mohit Vohra is an Assistant Principal Researcher in Robotics at DEWA R&D, working on machine vision, GNSS/RTK-based localization, autonomous inspection, and sensor-robot integration.">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
     body {
       font-family: Arial, sans-serif;
-      line-height: 1.6;
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
       color: #333;
+      margin: 0;
+      padding: 0;
     }
 
-    h1, h2 {
-      color: #222;
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
     }
 
-    h2 {
-      margin-top: 40px;
+    /* Main layout */
+    .profile-layout {
+      display: flex;
+      gap: 40px;
+      align-items: flex-start;
     }
 
-    img.profile {
-      float: right;
-      width: 150px;
-      height: 150px;
-      object-fit: cover;
+    /* Left column */
+    .left-column {
+      width: 280px;
+      text-align: center;
+    }
+
+    .left-column img {
+      width: 180px;
+      height: 180px;
       border-radius: 50%;
-      margin-left: 20px;
-      margin-bottom: 10px;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    .left-column h1 {
+      font-size: 26px;
+      margin: 10px 0 5px;
+    }
+
+    .left-column p {
+      font-size: 15px;
+      line-height: 1.4;
+      margin: 0;
+    }
+
+    /* Right column */
+    .right-column {
+      flex: 1;
+    }
+
+    .right-column h2 {
+      margin-top: 0;
+      font-size: 22px;
+    }
+
+    .right-column p {
+      line-height: 1.7;
     }
 
     ul {
-      list-style-type: disc;
       padding-left: 20px;
     }
 
@@ -51,11 +82,24 @@
       text-decoration: underline;
     }
 
-    @media (max-width: 600px) {
-      img.profile {
-        float: none;
-        display: block;
-        margin: 0 auto 20px auto;
+    /* Footer */
+    footer {
+      border-top: 1px solid #ddd;
+      margin-top: 50px;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+      .profile-layout {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .right-column {
+        margin-top: 30px;
       }
     }
   </style>
@@ -63,63 +107,77 @@
 
 <body>
 
-<h1>Mohit Vohra</h1>
-<p>
-Assistant Principal Researcher in Robotics with expertise in autonomous systems, machine vision, and GNSS/RTK-based localization.
-</p>
-<p><strong>Research & Development Centre, Dubai Electricity and Water Authority (DEWA)</strong></p>
+<div class="container">
 
+  <div class="profile-layout">
 
+    <!-- LEFT COLUMN -->
+    <div class="left-column">
+      <img src="assets/images/profile.jpg"
+           alt="Mohit Vohra">
 
-<img src="assets/images/profile.jpg"
-     alt="Mohit Vohra, Assistant Principal Researcher in Robotics at DEWA R&D"
-     class="profile"
-     loading="lazy">
+      <h1>Mohit Vohra</h1>
+      <p>
+        Assistant Principal Researcher in Robotics<br>
+        <strong>DEWA R&amp;D</strong>
+      </p>
+    </div>
 
-<h2>About Me</h2>
-<p>
-Mohit Vohra completed his PhD from <b>IIT Kanpur</b> on 
-<i>"Smart Manipulation Strategies for Autonomous Robotic Systems"</i>. 
-The doctoral thesis is available 
-<a href="https://shodhganga.inflibnet.ac.in/handle/10603/619826" target="_blank" rel="noopener noreferrer">here</a>.
-</p>
+    <!-- RIGHT COLUMN -->
+    <div class="right-column">
 
-<p>
-He is currently an <b>Assistant Principal Researcher</b> at <b>DEWA R&amp;D (Robotics)</b>, 
-where his work focuses on multi-sensor perception, GNSS/RTK integration, autonomous inspection, 
-and the development of field-deployable robotic systems for real-world infrastructure applications.
-</p>
+      <h2>About Me</h2>
+      <p>
+        I completed my PhD from <strong>IIT Kanpur</strong> on
+        <em>"Smart Manipulation Strategies for Autonomous Robotic Systems"</em>.
+        My doctoral thesis is available
+        <a href="https://shodhganga.inflibnet.ac.in/handle/10603/619826"
+           target="_blank" rel="noopener noreferrer">here</a>.
+      </p>
 
-<h2>Current Role & Responsibilities</h2>
-<ul>
-  <li>Leading the development of multi-sensor perception and localization systems for autonomous robotic platforms</li>
-  <li>Integrating GNSS/RTK, vision, and 3D sensing for precise navigation and inspection</li>
-  <li>Designing, validating, and deploying laboratory prototypes and field-ready robotic platforms</li>
-  <li>Collaborating with cross-functional research and engineering teams on advanced robotic solutions</li>
-</ul>
+      <p>
+        Currently, I am an <strong>Assistant Principal Researcher</strong> at
+        <strong>Dubai Electricity and Water Authority (DEWA) – R&amp;D</strong>,
+        where I work on the design and deployment of field-ready autonomous
+        robotic systems for real-world infrastructure applications.
+      </p>
 
-<h2>Research Interests</h2>
-<ul>
-  <li>Machine Vision and 3D Perception</li>
-  <li>GNSS-deprived Localization and SLAM</li>
-  <li>Autonomous Inspection Systems</li>
-  <li>Sensor–Robot Integration</li>
-  <li>Point Cloud Processing and 6D Pose Estimation</li>
-  <li>GNSS/RTK-based Localization</li>
-</ul>
+      <h2>Research Areas</h2>
+      <ul>
+        <li>Machine Vision and 3D Perception</li>
+        <li>GNSS-deprived Localization and SLAM</li>
+        <li>Autonomous Inspection Systems</li>
+        <li>Sensor–Robot Integration</li>
+        <li>Point Cloud Processing and 6D Pose Estimation</li>
+        <li>GNSS / RTK-based Localization</li>
+      </ul>
 
-<h2>Hobbies & Interests</h2>
-<p>
-Outside his research activities, he maintains an active and balanced lifestyle. He enjoys spending time in natural environments and has a particular appreciation for plants and flowers. He regularly engages in structured fitness training and running, and also participates in badminton, particularly enjoying competitive and challenging matches.
-</p>
+      <h2>Hobbies & Interests</h2>
+      <p>
+        Outside research, I enjoy spending time in nature and have a strong
+        interest in fitness. I regularly engage in workouts and running, and
+        also enjoy playing badminton, particularly competitive and challenging
+        games.
+      </p>
 
-<h2>Links</h2>
-<p>
-<a href="publications.html">Publications</a> |
-<a href="projects.html">Projects</a> |
-<a href="https://scholar.google.com" target="_blank" rel="noopener noreferrer">Google Scholar</a> |
-<a href="https://github.com/mOHITvOHRA-IITK" target="_blank" rel="noopener noreferrer">GitHub</a>
-</p>
+      <h2>Publications</h2>
+      <p>
+        <a href="publications.html">View my publications</a>
+      </p>
+
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <p>
+    <a href="https://www.linkedin.com/in/mohit-vohra/"
+       target="_blank" rel="noopener noreferrer">
+      LinkedIn
+    </a>
+  </p>
+</footer>
 
 </body>
 </html>
