@@ -195,57 +195,52 @@ footer a:hover {
   <a href="https://www.linkedin.com/in/mohit-vohra/" 
      target="_blank" rel="noopener noreferrer"
      class="linkedin-icon">
-    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="#0A66C2">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#0A66C2">
       <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0V8zm7.5 0h4.78v2.16h.07c.67-1.27 2.3-2.61 4.73-2.61 5.06 0 6 3.33 6 7.67V24H17v-7.38c0-1.76-.03-4.03-2.45-4.03-2.45 0-2.82 1.91-2.82 3.89V24H7.5V8z"/>
     </svg>
   </a>
 
   <a href="mailto:mohit.vohra@dewa.gov.ae" class="email-link">
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#0A66C2" viewBox="0 0 24 24" style="vertical-align: middle; margin-right: 6px;">
-    <path d="M12 13.065L.75 4.5V19.5H23.25V4.5L12 13.065ZM12 11.25L23.25 3H.75L12 11.25Z"/>
-  </svg>
-  mohit.vohra@dewa.gov.ae
-</a>
-
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#0A66C2" viewBox="0 0 24 24" style="vertical-align: middle; margin-right: 6px;">
+      <path d="M12 13.065L.75 4.5V19.5H23.25V4.5L12 13.065ZM12 11.25L23.25 3H.75L12 11.25Z"/>
+    </svg>
+    mohit.vohra@dewa.gov.ae
+  </a>
 </footer>
 
 <style>
 footer {
   border-top: 1px solid #ddd;
   margin-top: 50px;
-  padding: 30px 0;
+  padding: 20px 0;
   text-align: center;
-  background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 25px; /* space between LinkedIn and email */
+  gap: 20px; /* space between LinkedIn and email */
+  background: #fff;
 }
 
-.linkedin-icon {
-  display: inline-block;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.linkedin-icon:hover {
-  transform: scale(1.2);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-}
-
-.email-link {
-  font-size: 16px;
-  color: #0A66C2;
+.linkedin-icon, .email-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
   text-decoration: none;
+  color: #0A66C2;
+  font-size: 16px;
   transition: transform 0.2s, opacity 0.2s;
 }
 
-.email-link:hover {
+.linkedin-icon:hover, .email-link:hover {
   transform: scale(1.05);
-  opacity: 0.8;
+  opacity: 0.85;
+}
+
+.linkedin-icon svg, .email-link svg {
+  display: inline-block;
+  vertical-align: middle;
 }
 </style>
-
-
 
 </body>
 </html>
