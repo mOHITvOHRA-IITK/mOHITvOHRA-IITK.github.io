@@ -85,13 +85,18 @@
       opacity: 0.85;
     }
 
-     /* Slight LinkedIn lift */
+    /* Slight LinkedIn lift */
     .contact-icon.linkedin-icon {
       transform: translateY(-6px);
     } 
 
     .contact-icon.linkedin-icon:hover {
-      transform: translateY(-4px) scale(1.15);
+      transform: translateY(-6px) scale(1.15);
+    }
+
+    /* Google Scholar color */
+    .contact-icon.scholar-icon svg {
+      fill: #4285F4;
     }
 
     /* Right column */
@@ -163,6 +168,7 @@
 
       <!-- Contact Icons -->
       <div class="contact-icons">
+        <!-- LinkedIn -->
         <a href="https://www.linkedin.com/in/mohit-vohra/"
            target="_blank" rel="noopener noreferrer"
            class="contact-icon linkedin-icon"
@@ -172,11 +178,23 @@
           </svg>
         </a>
 
+        <!-- Email -->
         <a href="mailto:mohit.vohra@dewa.gov.ae"
            class="contact-icon"
            aria-label="Email">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#0A66C2">
             <path d="M12 13.065L.75 4.5V19.5H23.25V4.5L12 13.065ZM12 11.25L23.25 3H.75L12 11.25Z"/>
+          </svg>
+        </a>
+
+        <!-- Google Scholar -->
+        <a href="https://scholar.google.com/citations?hl=en&user=fYsci7YAAAAJ"
+           target="_blank" rel="noopener noreferrer"
+           class="contact-icon scholar-icon"
+           aria-label="Google Scholar">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="12"/>
+            <text x="12" y="16" font-size="12" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif">G</text>
           </svg>
         </a>
       </div>
